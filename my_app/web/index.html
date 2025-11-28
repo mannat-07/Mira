@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="ConvoAI - Voice Conversation App">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="ConvoAI">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>ConvoAI</title>
+  <link rel="manifest" href="manifest.json">
+  
+  <!-- 🔥 Firebase SDKs - MUST be loaded BEFORE flutter app -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
+  
+  <!-- 🔥 Firebase Configuration Note -->
+  <script>
+    // Firebase is initialized in the Flutter app using environment variables
+    // Configuration is loaded from .env file via lib/firebase_options.dart
+    // No hardcoded credentials should be placed here for security
+    console.log("🔒 Firebase will be initialized by Flutter app with secure env variables");
+  </script>
+</head>
+<body>
+  <!-- Load Flutter app -->
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

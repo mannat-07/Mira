@@ -1,0 +1,43 @@
+name: convoai
+description: A Flutter voice assistant application
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # --- CORE LLD DEPENDENCIES ---
+  firebase_core: ^2.25.3        # Required for all Firebase apps
+  cloud_firestore: ^4.15.3       # Required for Firestore (Database)
+  flutter_riverpod: ^2.5.1       # Required for State Management (LLD: Riverpod)
+  intl: ^0.18.1                  # Required for the Conversation model date formatting
+  
+  # --- SIMPLIFIED DEPENDENCIES ---
+  http: ^1.1.0                   # For API calls
+  google_generative_ai: ^0.2.2   # For Gemini LLM integration
+  speech_to_text: ^7.3.0         # For on-device speech recognition (Android/iOS/macOS/Web)
+  permission_handler: ^11.0.1    # For microphone permissions (Android/iOS/Windows/Linux)
+  flutter_tts: ^3.8.5            # For text-to-speech playback of AI responses
+  flutter_dotenv: ^5.1.0         # For loading environment variables from .env file
+  # -----------------------------
+
+  cupertino_icons: ^1.0.2
+  image_picker: ^1.0.0
+  shared_preferences: ^2.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
+    - assets/sounds/beep.wav
