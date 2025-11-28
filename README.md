@@ -2,6 +2,11 @@
 
 A Flutter-based AI voice conversation application powered by Google Gemini LLM, Firebase, and Agora for real-time voice communication.
 
+<p align="center">
+  <img src="/Mira.gif" alt="App Demo" width="400" />
+</p>
+
+
 ## 🚀 Features
 
 - 🎤 **Voice Conversations**: Real-time voice input and AI responses
