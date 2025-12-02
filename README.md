@@ -1,6 +1,6 @@
 # Mira - Voice Conversation App
 
-A Flutter-based AI voice conversation application powered by Google Gemini LLM, Firebase, and Agora for real-time voice communication.
+A Flutter-based AI voice conversation application powered by Google Gemini LLM, Firebase for real-time voice communication.
 
 <p align="center">
   <img src="/Mira.gif" alt="App Demo" width="400" />
@@ -67,7 +67,7 @@ If you need to use the Firebase Cloud Functions backend:
 ```bash
 cd backend/functions
 cp .env.example .env
-# Fill in your Agora credentials
+# Fill in your credentials
 npm install
 npm run serve  # Test locally
 npm run deploy # Deploy to Firebase
